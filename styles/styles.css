@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #756157;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.navigation__link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main--index {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.main--index__wrapper {
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.main__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.main__description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.advantages__item {
+    color: #000000;
+}
+
+.advantages__item--big {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.advantages__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.search__description {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+}
+
+.page-footer {
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.footer-subscribe {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000; 
+}
+
+.footer-subscribe--main {
+    background-image: url("../images/subscribe.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.footer-subscribe--inner {
+    color: #000000;
+    background-color: #FFFFFF; 
+}
+
+.footer-subscribe__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-subscribe__description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.footer-contacts__phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.inner-header__wrapper {
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("../images/filters.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.inner-header__title {
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs__link {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.filter-form__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-hotels__wrapper {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.catalog-hotels__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__link {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none; 
+}
+
+.card__rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagination {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.pagination__item {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.pagination__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
