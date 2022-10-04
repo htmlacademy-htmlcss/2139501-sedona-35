@@ -34,6 +34,18 @@ body {
     text-transform: uppercase;
   }
 
+.button--blue {
+    background-color: #82B3D3;
+}
+
+.button--transparent {
+    background-color: transparent;
+}
+
+.button--green {
+    background-color: #7DB54F;
+}
+
 .navigation__link {
     font-size: 20px;
     line-height: 24px;
@@ -44,6 +56,7 @@ body {
 }
 
 .main--index {
+    text-align: center;
     color: #000000;
     background-color: #ffffff;
     background-image: url("../images/index-background.jpg");
@@ -54,7 +67,6 @@ body {
 .main--index__wrapper {
     color: #000000;
     background-color: #FFFFFF;
-    text-align: center;
 }
 
 .main__title {
@@ -100,7 +112,6 @@ body {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
-    text-align: center;
     color: #000000;
 }
 
@@ -204,20 +215,25 @@ body {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-}
-
-.pagination__item {
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #82B3D3;
+    background-color: #FFFFFF;
 }
 
 .pagination__link {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
     color: #FFFFFF;
+    background-color: #82B3D3;
     text-decoration: none;
 }
 
+.pagination__link--current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.pagination__link--transparent {
+    color: #000000;
+    background-color: #FFFFFF;
+}
 
