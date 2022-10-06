@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation__logo" href="#">
-          <img class="navigation__image" src="images/sedona.svg" width="140" height="70" alt="Логотип города Седона." >
+          <img class="navigation__image" src="images/sedona.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -47,82 +48,84 @@
     </header>
 
     <main class="main main--index">
-      <img class="main__logo" src="images/index-background.jpg" width="1200" height="485" alt="Логотип Седона.">
-      <h1 class="main__title">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </h1>
-      <p class="main__description">
-        Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-      </p>
-
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__description">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img class="advantages__image" src="images/photo-1.jpg" width="800" height="384" alt="город Седона.">
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__description">
-              Все достопримечательности находятся очень близко
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__description">
-              Наши мастера — профессионалы своего дела и не могут стоить дешево.
-              к тому же, разве цена не дает определенный статус?
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__description">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
-          </li>
-          <li class="advantages__item">
-            <img class="advantages__image" src="images/photo-2.jpg" width="800" height="384" alt="Мост дьявола.">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <p class="advantages__description">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Жильё</h3>
-            <p class="advantages__description">
-              Рекомендуем пожитьв настоящем мотеле, всё как в кино!
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Еда</h3>
-            <p class="advantages__description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Сувениры</h3>
-            <p class="advantages__description">
-              Не только китайского, но и настоящего местного производства!
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <h3 class="search__title">Заинтересовались?</h3>
-        <p class="search__description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне
+      <img class="main__logo" src="images/welcome.svg" width="458" height="352" alt="Логотип Седона.">
+      <div class="main--index__wrapper">
+        <h1 class="main__title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="main__description">
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
-        <button type="button" class="search__button button button--brown">
-          Поиск гостиницы в Седоне
-        </button>
-      </section>
+  
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--big">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__description">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+              <img class="advantages__image" src="images/photo-1.jpg" width="800" height="384" alt="город Седона.">
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <p class="advantages__description">
+                Все достопримечательности находятся очень близко
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <p class="advantages__description">
+                Наши мастера — профессионалы своего дела и не могут стоить дешево.
+                к тому же, разве цена не дает определенный статус?
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <p class="advantages__description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--big">
+              <img class="advantages__image" src="images/photo-2.jpg" width="800" height="384" alt="Мост дьявола.">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <p class="advantages__description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Жильё</h3>
+              <p class="advantages__description">
+                Рекомендуем пожитьв настоящем мотеле, всё как в кино!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Еда</h3>
+              <p class="advantages__description">
+                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Сувениры</h3>
+              <p class="advantages__description">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </li>
+          </ul>
+        </section>
+  
+        <section class="search">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <h3 class="search__title">Заинтересовались?</h3>
+          <p class="search__description">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в Седоне
+          </p>
+          <button type="button" class="search__button button button--brown">
+            Поиск гостиницы в Седоне
+          </button>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
