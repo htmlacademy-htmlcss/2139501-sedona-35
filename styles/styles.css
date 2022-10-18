@@ -179,10 +179,6 @@ body {
   color: #333333;
 }
 
-.advantages {
-  margin-bottom: 96px;
-}
-
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
@@ -255,8 +251,7 @@ body {
 }
 
 .search {
-  padding: 0 304px;
-  margin-bottom: 96px;
+  padding: 96px 304px;
 }
 
 .search__title {
@@ -425,7 +420,7 @@ body {
 }
 
 .catalog-hotels {
-  padding: 50px 70px 0;
+  padding: 50px 70px 60px;
   color: #000000;
   background-color: #ffffff;
 }
