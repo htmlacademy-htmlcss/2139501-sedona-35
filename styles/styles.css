@@ -308,7 +308,8 @@ body {
   padding: 0;
 }
 
-.social__item {
+.social__button {
+  display: block;
   min-width: 48px;
   min-height: 40px;
   list-style-type: none;
@@ -467,9 +468,10 @@ body {
   list-style-type: none;
 }
 
-.buttons-list__item {
-  width: 48px;
-  height: 48px;
+.buttons-list__button {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .buttons-list__item:not(:last-child) {
