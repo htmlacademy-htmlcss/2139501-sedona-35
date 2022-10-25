@@ -52,8 +52,7 @@ body {
 }
 
 .button {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 34px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -65,6 +64,7 @@ body {
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button--blue {
@@ -95,6 +95,7 @@ body {
   display: block;
   width: 140px;
   height: 70px;
+  z-index: 1;
 }
 
 .navigation__list {
@@ -109,6 +110,7 @@ body {
 }
 
 .navigation__link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -117,6 +119,48 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation__link--current::before {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation__link--favorite {
+  position: relative;
+}
+
+.navigation__count {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 11px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  vertical-align: baseline;
+  z-index: 2;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
 }
 
 .navigation__list--user {
@@ -211,6 +255,7 @@ body {
 }
 
 .advantages__title {
+  position: relative;
   margin: 0;
   margin-bottom: 62px;
   padding: 0 27px;
@@ -218,6 +263,27 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.advantages__title::before {
+  position: absolute;
+  top: 86px;
+  left: 85px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.advantages__item--big .advantages__title::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.advantages__title--home {
+  background-image: url(../images/housing.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center right 20px;
 }
 
 .advantages__description {
