@@ -265,7 +265,7 @@ body {
   text-transform: uppercase;
 }
 
-.advantages__title::before {
+.advantages__title--border::before {
   position: absolute;
   top: 86px;
   left: 85px;
@@ -279,11 +279,40 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.advantages__title--home {
-  background-image: url(../images/housing.svg);
+.icon--home::before {
+  position: absolute;
+  content: "";
+  top: -102px;
+  left: 78px;
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/home.svg);
   background-repeat: no-repeat;
-  background-size: 75px 72px;
-  background-position: center right 20px;
+  z-index: 1;
+}
+
+.icon--food::before {
+  position: absolute;
+  content: "";
+  top: -102px;
+  left: 78px;
+  width: 74px;
+  height: 70px;
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.icon--souvenir::before {
+  position: absolute;
+  content: "";
+  top: -104px;
+  left: 83px;
+  width: 74px;
+  height: 76px;
+  background-image: url(../images/souvenir.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .advantages__description {
@@ -354,6 +383,7 @@ body {
 }
 
 .search__button {
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -361,6 +391,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 40px 70px 30px;
   font-weight: 400;
   color: #FFFFFF;
@@ -372,13 +403,43 @@ body {
   max-width: 238px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .social__button {
+  width: 48px;
+  height: 40px;
   display: block;
-  min-width: 48px;
-  min-height: 40px;
   list-style-type: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__button--vk {
+  background-image: url("../images/vk.svg");
+  background-size: 24px 14px;
+}
+
+.social__button--telegram {
+  background-image: url("../images/telegram.svg");
+  background-size: 18px 15px;
+}
+
+.social__button--youtube {
+  background-image: url("../images/youtube.svg");
+  background-size: 22px 17px;
+}
+
+.htmlacademy-link {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-image: url(../images/htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-position: center;
+  background-size: 115px 33px;
 }
 
 .subscribe {
@@ -421,13 +482,29 @@ body {
   font-weight: 400;
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe-form__field {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 345px 14px 20px;
   line-height: 24px;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe--inner .subscribe-form__field {
+  background: #F2F2F2;
 }
 
 .subscribe-form__button {
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0 4px 4px 0;
 }
 
 .footer-wrapper {
@@ -601,6 +678,10 @@ body {
 .card__price {
   text-align: end;
   color: #333333;
+}
+
+.card__button {
+  padding: 8px 0;
 }
 
 .card__rating {
