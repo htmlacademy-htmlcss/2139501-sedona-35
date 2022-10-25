@@ -162,7 +162,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.main__logo:after {
+.main__logo::after {
   content: url("../images/vector.svg");
   position: absolute;
   top: auto;
