@@ -537,26 +537,45 @@ body {
 
 .breadcrumbs {
   display: flex;
+  align-items: center;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
 }
 
 .breadcrumbs__item {
-  min-width: 12px;
-  min-height: 12px;
+  margin-right: 28px;
   list-style-type: none;
+  position: relative;
 }
 
-.breadcrumbs__item:not(:last-child) {
-  margin-right: 28px;
+.breadcrumbs__item:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 20px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  fill: #FFFFFF;
 }
 
 .breadcrumbs__link {
+  position: relative;
+  min-width: 13px;
+  min-height: 15px;
+  display: block;
   font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs__icon {
+  position: absolute;
+  width: 13px;
+  height: 15px;
+  content: "";
 }
 
 .filter-form {
