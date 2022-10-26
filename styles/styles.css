@@ -71,6 +71,10 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.button:focus-visible {
+  outline: none;
+}
+
 .button:disabled {
   background: #E5E5E5;
 }
@@ -106,13 +110,8 @@ body {
 
 .button--transparent:focus-visible {
   outline: 3px solid #83B3D3;
+  outline-offset: -3px;
   border-radius: 4px;
-}
-
-@supports not selector(:focus-visible) {
-  .button--transparent:focus {
-    outline: 3px solid #7691F8;
-  }
 }
 
 .button--transparent:disabled {
@@ -332,42 +331,6 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.icon--home::before {
-  position: absolute;
-  content: "";
-  top: -102px;
-  left: 78px;
-  width: 75px;
-  height: 72px;
-  background-image: url(../images/home.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.icon--food::before {
-  position: absolute;
-  content: "";
-  top: -102px;
-  left: 78px;
-  width: 74px;
-  height: 70px;
-  background-image: url(../images/food.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.icon--souvenir::before {
-  position: absolute;
-  content: "";
-  top: -104px;
-  left: 83px;
-  width: 74px;
-  height: 76px;
-  background-image: url(../images/souvenir.svg);
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
 .advantages__description {
   margin: 0;
   font-weight: 400;
@@ -380,6 +343,35 @@ body {
   padding: 0;
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.advantages__info--icon {
+  position: relative;
+}
+
+.advantages__info--icon::before {
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  top: 80px;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../images/home.svg") no-repeat center;
+}
+
+.advantages__info--icon.icon--food::before {
+  background: url("../images/food.svg") no-repeat center;
+  top: 81px;
+  width: 74px;
+  height: 70px;
+}
+
+.advantages__info--icon.icon--gift::before {
+  top: 78px;
+  width: 64px;
+  height: 76px;
+  background: url("../images/souvenir.svg") no-repeat center;
 }
 
 .advantages__list .advantages__item:nth-child(5) {
@@ -462,37 +454,50 @@ body {
 .social__button {
   width: 48px;
   height: 40px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style-type: none;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.social__button--vk {
-  background-image: url("../images/vk.svg");
-  background-size: 24px 14px;
+.social__icon {
+  fill: #83B3D3; 
 }
 
-.social__button--telegram {
-  background-image: url("../images/telegram.svg");
-  background-size: 18px 15px;
+.social__button:hover .social__icon {
+  fill: #68A2CA;
 }
 
-.social__button--youtube {
-  background-image: url("../images/youtube.svg");
-  background-size: 22px 17px;
+.social__button:focus .social__icon {
+  fill: #68A2CA;
+}
+
+.social__button:active .social__icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .htmlacademy-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 115px;
   height: 33px;
-  background-image: url(../images/htmlacademy.svg);
-  background-repeat: no-repeat;
-  background-color: #FFFFFF;
-  background-position: center;
-  background-size: 115px 33px;
+}
+
+.htmlacademy-link__icon {
+  fill: #000000;
+}
+
+.htmlacademy-link:hover .htmlacademy-link__icon {
+  fill: #756157;
+}
+
+.htmlacademy-link:focus .htmlacademy-link__icon {
+  fill: #756157;
+}
+
+.htmlacademy-link:active .htmlacademy-link__icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .subscribe {
@@ -571,6 +576,18 @@ body {
   text-decoration: none;
 }
 
+.footer-contacts__phone:hover {
+  color: #756157;
+}
+
+.footer-contacts__phone:focus {
+  color: #756157;
+}
+
+.footer-contacts__phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .inner-header__wrapper {
   padding: 35px 70px 70px;
   color: #ffffff;
@@ -606,7 +623,7 @@ body {
   position: absolute;
   content: "";
   bottom: 5px;
-  left: 25px;
+  left: 24px;
   width: 7px;
   height: 10px;
   background-image: url("../images/arrow-breadcrumbs.svg");
@@ -616,13 +633,16 @@ body {
 
 .breadcrumbs__link {
   position: relative;
-  min-width: 12px;
-  min-height: 12px;
-  display: block;
+  min-width: 13px;
+  min-height: 15px;
   font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs__icon {
+  fill: #FFFFFF;
 }
 
 .filter-form {
@@ -673,6 +693,23 @@ body {
   box-sizing: border-box;
 }
 
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 .buttons-list {
   display: flex;
   margin: 0;
@@ -697,6 +734,20 @@ body {
 
 .buttons-list__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.buttons-list__button:hover {
+  border: 2px solid #000000;
+}
+
+.buttons-list__button:focus-visible {
+  border: none;
+  outline: 2px solid #68A2CA;
+  outline-offset: -2px;
+}
+
+.buttons-list__button:active {
+  border: 2px solid #000000;
 }
 
 .hotel-list {
@@ -829,6 +880,24 @@ body {
   padding: 11px 18px;
 }
 
+.pagination__link:not(.pagination__link--current):not(.pagination__link--transparent):hover {
+  background: #68A2CA;
+}
+
+.pagination__link:not(.pagination__link--current):not(.pagination__link--transparent):focus-visible {
+  background: #68A2CA;
+  outline: none;
+}
+
+.pagination__link--current:focus-visible,
+.pagination__link--transparent:focus-visible {
+  outline: none;
+}
+
+.pagination__link:not(.pagination__link--current):not(.pagination__link--transparent):active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination__link--current {
   color: #000000;
   background-color: #F2F2F2;
@@ -839,3 +908,26 @@ body {
   background-color: #FFFFFF;
 }
 
+@supports not selector(:focus-visible) {
+  .pagination__link--current:focus-visible,
+  .pagination__link--transparent:focus-visible {
+    outline: none;
+  }
+
+  .pagination__link:not(.pagination__link--current):not(.pagination__link--transparent):focus {
+    outline: none;
+  }
+
+  .buttons-list__button:focus {
+    outline: 2px solid #68A2CA;
+    outline-offset: -2px;
+  }
+
+  .button--transparent:focus {
+    outline: 3px solid #7691F8;
+  }
+
+  .button--transparent:focus {
+    outline: none;
+  }
+}
