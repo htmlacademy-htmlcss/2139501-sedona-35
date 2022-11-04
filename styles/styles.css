@@ -256,6 +256,7 @@ img {
   position: relative;
   margin: 0 auto;
   padding: 51px 0 82px 0;
+  background-color: rgba(131, 179, 211, 0.7);
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -327,7 +328,7 @@ img {
 
 .advantages__title--border::before {
   position: absolute;
-  top: 86px;
+  bottom: -32px;
   left: 85px;
   width: 60px;
   height: 2px;
@@ -485,7 +486,7 @@ img {
   fill: #68a2ca;
 }
 
-.social__button:focus-visible{
+.social__button:focus-visible {
   outline: none;
 }
 
@@ -524,11 +525,11 @@ img {
 .subscribe {
   padding: 96px 258px 104px;
   color: #ffffff;
-  background-color: #000000;
   text-align: center;
 }
 
 .subscribe--main {
+  background-color: rgba(131, 179, 211, 0.7);
   background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -592,7 +593,7 @@ img {
 
 input[type="email"]::-moz-placeholder {
   opacity: 0.6;
- }
+}
 
 input[type="email"]::-webkit-input-placeholder {
   opacity: 0.6;
@@ -641,7 +642,7 @@ input[type="email"]::placeholder {
 .inner-header__wrapper {
   padding: 35px 70px 70px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: rgba(131, 179, 211, 0.7);
   background-image: url("../images/filters.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1576,14 +1577,12 @@ input::-webkit-inner-spin-button {
   }
 
   .button--transparent:focus {
-    outline: 3px solid #7691f8;
+    outline: 3px solid #83b3d3;
+    outline-offset: -3px;
+    border-radius: 4px;
   }
 
-  .button--transparent:focus {
-    outline: none;
-  }
-
-  .social__button:focus{
+  .social__button:focus {
     outline: none;
   }
 
@@ -1601,7 +1600,7 @@ input::-webkit-inner-spin-button {
     outline: none;
   }
 
-  .breadcrumbs__link:focus {
+  .breadcrumbs__link:focus .breadcrumbs__icon{
     fill: rgba(255, 255, 255, 0.6);
   }
 
