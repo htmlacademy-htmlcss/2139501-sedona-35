@@ -1274,7 +1274,6 @@ input[type="number"] {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 48px;
 }
 
 .modal__group--quantity {
@@ -1282,10 +1281,7 @@ input[type="number"] {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 247px;
-}
-
-.modal__group--quantity:last-of-type {
-  width: 242px;
+  margin-bottom: 48px;
 }
 
 .modal__close-button {
@@ -1480,6 +1476,7 @@ input::-webkit-inner-spin-button {
 }
 
 .label__child {
+  margin-left: 5px;
   margin-right: 11px;
   max-width: 90px;
 }
