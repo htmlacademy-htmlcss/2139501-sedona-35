@@ -220,49 +220,64 @@
           <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
           <form class="modal__hotels-form hotels-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="hotels-form__wrapper">
-              <label class="label label__start" for="start-date">Дата Заезда:</label>
-              <span class="field-date__start-block">
-                <input class="input input__date date__start" type="text" id="start-date" name="start-date" value="27 апреля 2020" required>
-                <button class="button__calendar" type="button">
-                  <span class="visually-hidden">Календарь</span>
-                </button>
-              </span>
-              <span class="notice date__notice">Мы не можем отправить вас в прошлое.</span>
-              <label class="label label__end" for="exit-date">Дата Выезда:</label>
-              <span class="field-date__end-block">
-                <input class="input input__date date__end" type="text" id="exit-date" name="exit-date" value="1 сентября 2023" required>
-                <button class="button__calendar" type="button">
-                  <span class="visually-hidden">Календарь</span>
-                </button>
-              </span>
-              <span class="notice notice__rooms">На эти даты есть свободные номера. Пока есть.</span>
-              <label class="label label__people" for="people">Взрослые:</label>
-              <span class="field-people__block">
-                <button class="number__button number__button--minus" type="button">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <input class="input input__number people" type="number" id="people" name="people" value="2">
-                <button class="number__button number__button--plus" type="button">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </span>
-              <span class="label__child-block">
-                <label class="label label__child" for="childs">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label"></button>
-                  <span class="tooltip__text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
-                    вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <div class="modal__group modal__group--date">
+                <label class="label label__start" for="start-date">Дата Заезда:</label>
+                <span class="field-date__start-block">
+                  <input class="input input__date date__start" type="text" id="start-date" name="start-date" value="27 апреля 2020" required>
+                  <button class="button__calendar" type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
                 </span>
-              </span>
-              <span class="field-child__block">
-                <button class="number__button number__button--minus" type="button">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <input class="input input__number child" type="number" id="childs" name="childs" value="2">
-                <button class="number__button number__button--plus" type="button">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </span>
+                <span class="notice date__notice">Мы не можем отправить вас в прошлое.</span>
+              </div>
+
+              <div class="modal__group modal__group--date">
+                <label class="label label__end" for="exit-date">Дата Выезда:</label>
+                <span class="field-date__end-block">
+                  <input class="input input__date date__end" type="text" id="exit-date" name="exit-date" value="1 сентября 2023" required>
+                  <button class="button__calendar" type="button">
+                    <span class="visually-hidden">Календарь</span>
+                  </button>
+                </span>
+                <span class="notice notice__rooms">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+
+
+              <div class="quantity__wrapper">
+                <div class="modal__group modal__group--quantity">
+                  <label class="label label__people" for="people">Взрослые:</label>
+                  <span class="field-people__block">
+                    <button class="number__button number__button--minus" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="input input__number people" type="number" id="people" name="people" value="2">
+                    <button class="number__button number__button--plus" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </span>
+                </div>
+
+                <div class="modal__group modal__group--quantity">
+                  <span class="label__child-block">
+                    <label class="label label__child" for="childs">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label"></button>
+                      <span class="tooltip__text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
+                        вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <span class="field-child__block">
+                    <button class="number__button number__button--minus" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="input input__number child" type="number" id="childs" name="childs" value="2">
+                    <button class="number__button number__button--plus" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+
               <input class="button button__submit button--blue" type="submit" value="Найти">
             </div>
           </form>
